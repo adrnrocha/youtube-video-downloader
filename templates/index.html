@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar Vídeo do YouTube</title>
+    <!-- Referência ao CSS usando url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Baixe seus vídeos favoritos!</h1>
+            <p>Insira o link do vídeo do YouTube abaixo para baixar rapidamente.</p>
+        </header>
+        
+        <div class="form-container">
+            <input type="text" id="url" placeholder="Cole o link do YouTube aqui" />
+            <button onclick="baixarVideo()">Baixar Vídeo</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+
+    <!-- Referência ao JS usando url_for -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
